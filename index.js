@@ -14,6 +14,7 @@ const server = http.createServer((req,res) => {
     httpString = httpString+ slugify(httpString,"-") + "\n";
     httpString = httpString+ "Hey Dave!"+ "\n";
     httpString = httpString+ "Hey Mary!"+ "\n";
+    httpString = httpString+ "Hey Jude!"+ "\n";
     res.end(httpString);
 });
 
@@ -29,6 +30,7 @@ app.get('/', function (req, res) {
     httpString = httpString+ slugify(httpString,"-") + "\n";
     httpString = httpString+ "Hey Bob!"+ "\n";
     httpString = httpString+ "Hey Sue!"+ "\n";
+    httpString = httpString+ "Hello.... It is Pete you're looking for?!"+ "\n";
     res.end(httpString);
     httpString=""
   })
