@@ -13,7 +13,6 @@ const server = http.createServer((req,res) => {
     httpString = httpString+ random_name() + "\n";
     httpString = httpString+ slugify(httpString,"-") + "\n";
     httpString = httpString+ "Hey Dave!"+ "\n";
-    httpString = httpString+ "Hey Pete!"+ "\n";
     res.end(httpString);
 });
 
@@ -28,7 +27,6 @@ app.get('/', function (req, res) {
     httpString = httpString+ random_name() + "\n";
     httpString = httpString+ slugify(httpString,"-") + "\n";
     httpString = httpString+ "Hey Bob!"+ "\n";
-    httpString = httpString+ "Hey Sue!"+ "\n";
     res.end(httpString);
     httpString=""
   })
