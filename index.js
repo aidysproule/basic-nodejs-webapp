@@ -31,6 +31,7 @@ app.get('/', function (req, res) {
     httpString = httpString+ "Hey Bob!"+ "\n";
     httpString = httpString+ "Hey Sue!"+ "\n";
     httpString = httpString+ "Hello.... It is Pete you're looking for?!"+ "\n";
+    httpString = httpString+ "No, it's Beety I need."+ "\n";
     res.end(httpString);
     httpString=""
   })
