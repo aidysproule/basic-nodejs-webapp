@@ -6,15 +6,14 @@ const slugify = require('slugify');
 const express = require('express');
 const app = express();
 
-var httpString;
+
 
 const server = http.createServer((req,res) => {
+  
     httpString = randomstring.generate() + "\n";
     httpString = httpString+ random_name() + "\n";
     httpString = httpString+ slugify(httpString,"-") + "\n";
     httpString = httpString+ "Hey Dave!"+ "\n";
-    httpString = httpString+ "The secret password is: Password1"+ "\n";
-    httpString = httpString+ "Everyone was kung fu fighting!"+ "\n";
     res.end(httpString);
 });
 
@@ -29,8 +28,6 @@ app.get('/', function (req, res) {
     httpString = httpString+ random_name() + "\n";
     httpString = httpString+ slugify(httpString,"-") + "\n";
     httpString = httpString+ "Hey Bob!"+ "\n";
-    httpString = httpString+ "The secret password is actaully just: 1234567890"+ "\n";
-    httpString = httpString+ "Baa baa black sheep"+ "\n";
     res.end(httpString);
     httpString=""
   })
